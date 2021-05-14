@@ -3,7 +3,7 @@ services:
   ubuntu:
     build: .
     volumes:
-      - ..:/code
+      - .:/code
     network_mode: "host"
     tty: true
 
