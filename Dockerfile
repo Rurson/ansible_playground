@@ -12,6 +12,8 @@ RUN echo "===> Removing Ansible PPA..."
 RUN rm -rf /var/lib/apt/lists/*  /etc/apt/sources.list.d/ansible.list \
 RUN echo "===> Adding hosts for convenience..."
 RUN echo 'localhost' > /etc/ansible/hosts
+RUN echo "===> Adding argcomplete for convenience..."
+RUN apt install -y python-argcomplete
 
 FROM anisble as base
 RUN export DEBIAN_FRONTEND=dialog
