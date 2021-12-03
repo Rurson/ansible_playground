@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "anisble_playground"
+name = "ansible_playground"
 version = "0.1.0"
 description = ""
 authors = ["Juliusz Lewalski <juliusz.lewalski@gmail.com>"]
@@ -7,6 +7,8 @@ authors = ["Juliusz Lewalski <juliusz.lewalski@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 ansible = "^5.0.1"
+docker = "^5.0.3"
+docker-compose = "^1.29.2"
 
 [tool.poetry.dev-dependencies]
 

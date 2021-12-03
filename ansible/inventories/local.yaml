@@ -1,13 +1,11 @@
-hosts:
-  localhost:
-    vars:
+all:
+  hosts:
+    localhost:
       ansible_host: 127.0.0.1
       anisble_connection: local
       anisble_user: root
       ansible_sudo: yes
       ansible_python_interpreter: "{{ansible_playbook_python}}"
-  docker:
-    vars:
-      anible_host: anisbleplayground_ubuntu_1
-      anisble_user: root
-
+    containers:
+      ansible_connection: docker
+      ansible_host: anisble_playground_ubuntu_1
